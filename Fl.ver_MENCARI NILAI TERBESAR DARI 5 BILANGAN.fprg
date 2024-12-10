@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-01 08:14:00 PM"/>
+        <attribute name="created" value="TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAxLTI2OzExOjA3OjA5IEFNOzI1NDg="/>
+        <attribute name="edited" value="TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAyLTAxOzA4OjE0OjAwIFBNOzI7MjY2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Masukkan data 5 bilangan a, b, c, d, dan e&quot;" newline="True"/>
+            <declare name="a, b, c, d, e, tb" type="Real" array="False" size=""/>
+            <output expression="&quot;a = &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b = &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;c = &quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;d = &quot;" newline="True"/>
+            <input variable="d"/>
+            <output expression="&quot;e = &quot;" newline="True"/>
+            <input variable="e"/>
+            <assign variable="tb" expression="a"/>
+            <if expression="tb&lt;b">
+                <then>
+                    <assign variable="tb" expression="b"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="tb&lt;c">
+                <then>
+                    <assign variable="tb" expression="c"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="tb&lt;d">
+                <then>
+                    <assign variable="tb" expression="d"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="tb&lt;e">
+                <then>
+                    <assign variable="tb" expression="e"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Bilangan terbesar &quot; &amp;tb" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

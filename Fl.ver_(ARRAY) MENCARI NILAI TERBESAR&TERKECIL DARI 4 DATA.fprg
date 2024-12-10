@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-09 11:32:21 AM"/>
+        <attribute name="created" value="TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAxLTI5OzA0OjQ2OjAzIFBNOzI1NjU="/>
+        <attribute name="edited" value="TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAxLTMwOzEyOjQ5OjE2IEFNOzk7TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAxLTMwOzEyOjE3OjIyIEFNO1RFU1QgNC5mcHJnOzYyMDM="/>
+        <attribute name="edited" value="TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAyLTA5OzExOjMyOjIxIEFNOzEwOzI2OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Mencari bilangan terbesar dan terkecil dari 4 bilangan&quot;" newline="True"/>
+            <declare name="data" type="Integer" array="True" size="4"/>
+            <declare name="i, besar1, besar2, kecil1, kecil2" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <output expression="&quot;Masukkan bilangan ke-&quot; &amp; i + 1" newline="True"/>
+                <input variable="data[i]"/>
+            </for>
+            <if expression="data[0]&gt;data[1]">
+                <then>
+                    <assign variable="besar1" expression="data[0]"/>
+                    <assign variable="kecil1" expression="data[1]"/>
+                </then>
+                <else>
+                    <assign variable="besar1" expression="data[1]"/>
+                    <assign variable="kecil1" expression="data[0]"/>
+                </else>
+            </if>
+            <if expression="data[2]&gt;data[3]">
+                <then>
+                    <assign variable="besar2" expression="data[2]"/>
+                    <assign variable="kecil2" expression="data[3]"/>
+                </then>
+                <else>
+                    <assign variable="besar2" expression="data[3]"/>
+                    <assign variable="kecil2" expression="data[2]"/>
+                </else>
+            </if>
+            <if expression="besar1&gt;besar2">
+                <then>
+                    <output expression="&quot;Bilangan terbesar adalah &quot; &amp; besar1" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilangan terbesar adalah &quot; &amp; besar2" newline="True"/>
+                </else>
+            </if>
+            <if expression="kecil1&lt;kecil2">
+                <then>
+                    <output expression="&quot;Bilangan terkecil adalah &quot; &amp; kecil1" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilangan terkecil adalah &quot; &amp; kecil2" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

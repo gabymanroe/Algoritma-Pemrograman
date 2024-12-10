@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-09 11:57:41 AM"/>
+        <attribute name="created" value="TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAyLTA5OzExOjUzOjUxIEFNOzI1NDg="/>
+        <attribute name="edited" value="TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAyLTA5OzExOjU0OjUxIEFNOzE7TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAyLTA5OzExOjMyOjI5IEFNO01FTkdISVRVTkcgSlVNTEFIIERFUkVUIEJJTEFOR0FOIFBBTkdLQVQgMi5mcHJnOzg2ODE="/>
+        <attribute name="edited" value="TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAyLTA5OzExOjU3OjQxIEFNOzE7MjY1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, sn" type="Integer" array="False" size=""/>
+            <output expression="&quot;Sn = 1 + 8 + 27 + ... + n^3&quot;" newline="True"/>
+            <output expression="&quot;Nilai n = ?&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="sn" expression="0"/>
+            <output expression="&quot;Sn = &quot;" newline="False"/>
+            <while expression="i &lt; n">
+                <output expression="i^3 &amp; &quot; + &quot;" newline="False"/>
+                <assign variable="sn" expression="sn + i^3"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="sn" expression="Sn + n^3"/>
+            <output expression="n^3 &amp; &quot; = &quot;" newline="False"/>
+            <output expression="sn" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

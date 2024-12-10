@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-09 12:16:27 PM"/>
+        <attribute name="created" value="TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAyLTA5OzEyOjAzOjUwIFBNOzI1NTg="/>
+        <attribute name="edited" value="TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAyLTA5OzEyOjExOjMyIFBNOzQ7TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAyLTA5OzExOjUzOjUxIEFNO01FTkdISVRVTkcgSlVNTEFIIERFUkVUIEJJTEFOR0FOIFBBTkdLQVQgMy5mcHJnOzg2OTE="/>
+        <attribute name="edited" value="TGVub3ZvO0xFTk9WTy1QQzsyMDIyLTAyLTA5OzEyOjE2OjI3IFBNOzI7MjY3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, sn" type="Integer" array="False" size=""/>
+            <output expression="&quot;Sn = 1 + 4 + 9 + ... + n^2&quot;" newline="True"/>
+            <output expression="&quot;Nilai n = ?&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="sn" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;Sn = &quot;" newline="False"/>
+            <do expression="i&lt;n">
+                <output expression="i^2 &amp; &quot; + &quot;" newline="False"/>
+                <assign variable="sn" expression="sn + i^2"/>
+                <assign variable="i" expression="i+1"/>
+            </do>
+            <assign variable="sn" expression="Sn + n^2"/>
+            <output expression="n^2 &amp; &quot; = &quot;" newline="False"/>
+            <output expression="sn" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
